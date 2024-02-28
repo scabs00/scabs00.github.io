@@ -1,39 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Scab's Hideout</title>
-        <!--TODO: Adjusting the colors of my website to match the Windows 95 logo-->
+        <title>Sash's Hideout</title>
+        <!--TODO: Adjusting the colors of my website to match the Windows 95 logo, can be changed later-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
         <style> 
-            body{
+            .dm-serif display-regular {
+                font-family: "DM Serif Display", serif;
+                font-weight: 400;
+                font-style: normal;
+                }
+            .dm-serif display-regular-italic {
+                font-family: "DM Serif Display", serif;
+                font-weight: 400;
+                font-style: italic;
+                }
+            body {
                 background-color: #020202; 
             }
+
             h1 {
-                color: #459EE5; 
+                color: #459EE5;
+                font-family: "DM Serif Display";
+                text-align: center;
             }
             h2 {
                 color: #64C454;
+                font-family: "DM Serif Display";
             }
             h3 {
-                color:#64C454; 
+                color:#64C454;
+                font-family: "DM Serif Display"; 
             }
             p {
                 color: #F3632B;
+                font-family: "DM Serif Display";
+            }
+
+            .first_row{
+                display: flex;
+                align-content: center;
+                justify-content: space-between;
+                margin: 100px 100px 100px 100px;
+            }
+            .left_row {
+                flex-basis: 100%;
+                
+            }
+            .right_row {
+                flex-basis: 50%;
             }
             
+            #one {
+                background-color: bisque;
+            }
+
+            #two {
+                background-color: antiquewhite;
+            }
+
+            #three {
+                background-color: aquamarine;
+            }
         </style>
         <h1> Oh, glad you could make it...</h1>
     </head>
-    <body 
-        <div class="row">
-            <div class="column">
+    <body>
+        <article class="first_row">
+            <div class="left_row">
                 <h2>Hi, I'm Sasha,</h2>
                 <h3>but my friends call me scabs</h3>
                 <p>I am a computer programming student. I love to code and create aesthetic-looking things. If I'm not coding, you can find me reading, and playing video games.</p>
-                <!--insert a profile picture of myself-->
             </div>
-            <div class="column">
-                <img src="">
+            <div class="right_row"></div>
+                <a href="https://lh3.googleusercontent.com/pw/AP1GczNItzmGTbMvl1YUZ2bfySnPiEpsSwxUwV8pO-hRvl2f8KUU8ciX31cfR3zzt9MNif1-StWhAY9W4eVkmX1hd-9xMfubE0QOB86bvm5DjGanGQ7hnlw=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/pw/AP1GczNItzmGTbMvl1YUZ2bfySnPiEpsSwxUwV8pO-hRvl2f8KUU8ciX31cfR3zzt9MNif1-StWhAY9W4eVkmX1hd-9xMfubE0QOB86bvm5DjGanGQ7hnlw=w600-h315-p-k" alt="picture of my cat, Eminem"/> </a>
             </div>
-        </div>
+        </article>
     </body>
 </html>
